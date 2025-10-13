@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mohamed Matharirfan — Data Analyst Portfolio</title>
+  <title>Mohamed Mathar irfan — Data Analyst Portfolio</title>
   <!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -19,7 +19,7 @@
     *{box-sizing:border-box}
     html,body{height:100%;margin:0;background:linear-gradient(180deg,#071028 0%, #071122 100%);color:#e6eef8}
     html {
-  scroll-padding-top: 80px; /* adjust to your header's height */
+  scroll-padding-top: 120px; /* adjust to your header's height */
 }
     a{color:var(--accent);text-decoration:none}
     header{backdrop-filter: blur(6px);position:sticky;top:0;z-index:40;padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
@@ -66,7 +66,7 @@
     footer{margin-top:30px;text-align:center;color:var(--muted);font-size:13px;padding-bottom:40px}
 
     @media (max-width:880px){
-      
+       
       .hero{grid-template-columns:1fr;}
       .profile{order:-1}
       .projects{grid-template-columns:1fr}
@@ -76,22 +76,36 @@
   </style>
 </head>
 <body>
-  <header>
-    <div class="brand" style="border-radius: 50px;">
-      <div class="logo"><img src="images/photo.jpg" style="border-radius: 50px;" width="50px" height="50px" alt="profile photo"></div>
+  <header class="navbar navbar-expand-lg navbar-dark sticky-top" 
+        style="backdrop-filter: blur(6px); background: rgba(15, 23, 42, 0.8);">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#" style="color:#e6eef8; font-weight:600;">
+      <img src="images/photo.jpg" alt="profile photo" width="45" height="45" class="rounded-circle me-2">
       <div>
-        <div style="font-weight:700">Mohamed Mathar irfan</div>
-        <div class="muted" style="font-size:13px">Data Analyst</div>
+        <div>Mohamed Mathar Irfan</div>
+        <small class="text-secondary" style="color:#94a3b8 !important;">Data Analyst</small>
       </div>
+    </a>
+
+    <!-- Hamburger Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+      aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
     </div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      
-    </nav>
-  </header>
+  </div>
+</header>
+
+
 
   <main>
     <section id="home" class="hero">
@@ -107,8 +121,8 @@
       </div>
 
       <div class="profile">
-        <div class="avatar" style="border-radius: 50px;" title="Profile photo">
-          <img src="images/Gemini_Generated_Image_uem1mguem1mguem1.png" style="border-radius: 50px;" alt="profile photo">
+        <div class="avatar" style="border-radius: 70px;" title="Profile photo">
+          <img src="images/Gemini_Generated_Image_uem1mguem1mguem1.png" style="border-radius: 70px;" alt="profile photo">
         </div>
       </div>
     </section>
@@ -174,6 +188,7 @@
     </footer>
   </main>
 
-  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
