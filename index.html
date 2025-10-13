@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mohamed Matharirfan — Data Analyst Portfolio</title>
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent:#0284c7; /* blue */
+      --muted:#6b7280;
+      --bg:#0f172a;
+      --card:#0b1220;
+      --glass: rgba(255,255,255,0.03);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071028 0%, #071122 100%);color:#e6eef8}
+    html {
+  scroll-padding-top: 80px; /* adjust to your header's height */
+}
+    a{color:var(--accent);text-decoration:none}
+    header{backdrop-filter: blur(6px);position:sticky;top:0;z-index:40;padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700}
+    nav{display:flex;gap:16px}
+    nav a{padding:8px 12px;border-radius:8px;font-size:15px;color:#cfe8ff}
+    nav a:hover{background:rgba(255,255,255,0.02)}
+
+    main{max-width:980px;margin:28px auto;padding:20px}
+
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:28px;align-items:center}
+    .hero-card{background:var(--glass);padding:28px;border-radius:14px}
+    h1{margin:0 0 8px;font-size:28px}
+    .subtitle{color:var(--muted);margin-bottom:18px}
+    .cta{display:flex;gap:12px}
+    .btn{padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#06b6d4);color:white;border:0;cursor:pointer}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#dceeff}
+
+    .profile{display:flex;align-items:center;justify-content:center}
+    .avatar{width:250px;height:250px;border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(2,6,23,0.7);border:1px solid rgba(255,255,255,0.04)}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+
+    section.skills{margin-top:22px}
+    .skills-grid{display:flex;flex-wrap:wrap;gap:14px}
+    .skill{background:var(--card);padding:10px 14px;border-radius:10px;min-width:140px;text-align:center}
+    .skill .label{font-weight:600}
+    .skill small{display:block;color:var(--muted);margin-top:6px}
+
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}
+    .project{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:14px;border-radius:12px}
+    .project h3{margin:0 0 8px}
+    .project p{color:var(--muted);margin:0 0 12px}
+    .proj-tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{font-size:13px;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.02);color:#cfe8ff}
+
+    section.contact{margin-top:22px;background:var(--glass);padding:18px;border-radius:12px}
+    form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    form .full{grid-column:1/-1}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:inherit;resize:vertical}
+    textarea{min-height:120px}
+    .muted{color:var(--muted);font-size:14px}
+
+    footer{margin-top:30px;text-align:center;color:var(--muted);font-size:13px;padding-bottom:40px}
+
+    @media (max-width:880px){
+      
+      .hero{grid-template-columns:1fr;}
+      .profile{order:-1}
+      .projects{grid-template-columns:1fr}
+      form{grid-template-columns:1fr}
+      .avatar{width:220px;height:220px;margin:0 auto}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand" style="border-radius: 50px;">
+      <div class="logo"><img src="images/photo.jpg" style="border-radius: 50px;" width="50px" height="50px" alt="profile photo"></div>
+      <div>
+        <div style="font-weight:700">Mohamed Mathar irfan</div>
+        <div class="muted" style="font-size:13px">Data Analyst</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-card">
+        <h1>Hi, I'm <span style="color:var(--accent)">Mohamed Mathar irfan </span></h1>
+        <div class="subtitle">Data Analyst | Python | Excel | Power BI | SQL</div>
+        <p class="muted">I’m a passionate data analyst fresher skilled in collecting, cleaning, and visualizing data to help make data-driven decisions. I enjoy turning raw data into meaningful insights using modern analytical tools.</p>
+        <div class="cta" style="margin-top:18px">
+          
+          <a href="images/mathar_irfan_DA.pdf" download class="btn" style="background:#874cd3">Resume</a>
+        </div>
+        <div style="margin-top:16px;color:var(--muted);font-size:13px">LinkedIn: <a href="https://www.linkedin.com/in/mohamed-mathar-irfan">linkedin.com/in/mohamed-mathar-irfan</a></div>
+      </div>
+
+      <div class="profile">
+        <div class="avatar" style="border-radius: 50px;" title="Profile photo">
+          <img src="images/Gemini_Generated_Image_uem1mguem1mguem1.png" style="border-radius: 50px;" alt="profile photo">
+        </div>
+      </div>
+    </section>
+<br>
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <p class="muted">Data Analysis & Visualization Tools</p>
+      <div class="skills-grid" style="margin-top:12px">
+        <div class="skill"><div class="label">Python</div><small>Pandas, NumPy</small></div>
+        <div class="skill"><div class="label">MYSQL</div><small>Database Queries</small></div>
+        <div class="skill"><div class="label">Excel</div><small>Data Cleaning, Charts</small></div>
+        <div class="skill"><div class="label">Power BI</div><small>Visualization</small></div>
+        <div class="skill"><div class="label">Tableau</div><small>Dashboards</small></div>
+        <div class="skill"><div class="label">Data Visualization</div><small>Matplotlib, Seaborn</small></div>
+      </div>
+    </section>
+<br>
+    <section id="projects">
+  <h2 style="margin-top:18px">Projects</h2>
+  <p class="muted">Projects completed during training and practice.</p>
+
+  <div class="projects">
+
+    <!-- Project 1: Company Attendance Details -->
+    <article class="project">
+      <h4>Company Attendance Details</h4>
+      <p>Analyzed employee attendance data, tracked patterns, and visualized trends using PowerBI and Excel.</p>
+      <div class="proj-tags">
+        <span class="tag">Python</span>
+        <span class="tag">Excel</span>
+        <span class="tag">PowerBI</span>
+        
+      </div><br>
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiMjNiNTAzMWYtZTE2ZC00ZDE4LThiYzgtM2RlOTRjODIxYTI1IiwidCI6Ijk5YjE1M2I2LTg5NmYtNDBhNS04NWIxLTE3OWYyNDAzOThlYyJ9 " class="btn" target="_blank">View Project</a>
+    </article>
+
+    <!-- Project 2: Tenkasi 2021 Assembly Election Analysis -->
+    <article class="project">
+      <h4>Tenkasi 2021 Assembly Election Analysis</h4>
+      <p>Analyzed election results to identify voting trends and patterns. Published interactive charts on the web.</p>
+      <div class="proj-tags">
+        <span class="tag">Python</span>
+        <span class="tag">Excel</span>
+        <span class="tag">PowerBI</span>
+        
+      </div><br>
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiNmY4M2FjYjYtM2JlMC00NTNlLWFjZDYtZjIwOGMzN2I3YTJkIiwidCI6Ijk5YjE1M2I2LTg5NmYtNDBhNS04NWIxLTE3OWYyNDAzOThlYyJ9 " class="btn"  target="_blank">View Project</a>
+    </article>
+
+  </div>
+</section>
+<br>
+    <section id="contact">
+  <h2>Contact Me</h2>
+  <p>Email: <a href="mailto:matharirfan810@gmail.com">matharirfan810@gmail.com</a></p>
+  <p>Phone: <a href="tel:+91 6369172440">+91 6369172440</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-mathar-irfan" target="_blank">linkedin.com/in/mohamed-mathar-irfan</a></p>
+  
+</section>
+
+    <footer>
+      <div>© 2025 Mohamed Matharirfan — Data Analyst Portfolio</div>
+    </footer>
+  </main>
+
+  
+</body>
+</html>
